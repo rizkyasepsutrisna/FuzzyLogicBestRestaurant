@@ -1,3 +1,5 @@
+import os
+import pandas as pd
 import csv
 
 pRendah = 0
@@ -134,8 +136,7 @@ bantuan = []
 listBantuan = []
 
 labelKolom = ['id', 'pelayanan', 'makanan']
-namaFile = 'Rizky Asep Sutrisna\FuzzyLogic\restoran.xlsx'
-with open(namaFile) as rdFile:
+with open('restoran.csv') as rdFile:
     rdFile = csv.reader(rdFile, delimiter=',')
     count = 0
     x = []
